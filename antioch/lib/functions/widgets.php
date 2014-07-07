@@ -115,7 +115,7 @@ endif;
 				endif;
 					echo "<a href=\"".get_permalink()."\">";
 				if($show_image == 'true' && !empty($the_thumb)):
-					echo "<img src=\"".$the_thumb."\" alt=\"".$the_title."\">\n";
+					echo "<img class=\"post-img\" src=\"".$the_thumb."\" alt=\"".$the_title."\">\n";
 				endif;
 				if($show_date == 'true' && ($show_image == 'false' || empty($the_thumb))):
 					echo "<p class=\"left\">".get_the_date()."</p>";
@@ -748,9 +748,9 @@ endif;
 					echo "<h5>".$the_title."</h5>\n";
 				endif;
 				if($show_email == 'true' && ($show_image == 'false' || empty($the_thumb))):
-					echo "<p class=\"left notranslate\"><a href=\"mailto:".$emailaddress."\">".$emailaddress."</a></p>";
+					echo "<p class=\"left notranslate\"><a class=\"email\" href=\"mailto:".$emailaddress."\">Contactez moi par courriel</a></p>";
 				elseif($show_email == 'true'):
-					echo "<p class=\"notranslate\"><a href=\"mailto:".$emailaddress."\">".$emailaddress."</a></p>";
+					echo "<p class=\"notranslate\"><a class=\"email\" href=\"mailto:".$emailaddress."\">Contactez moi par courriel</a></p>";
 				endif;
 				echo "</a>\n";
 				echo "<div class=\"clear\"></div>\n";

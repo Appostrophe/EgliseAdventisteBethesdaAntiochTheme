@@ -622,7 +622,7 @@ if(!function_exists('ct_person_contact')) {
 		printf('<div class="ct_person_contact">');
 			printf('<ul>');
 				if($person_email_label && $person_email_address):
-					printf(__('<li><span>'.$person_email_label.'</span><a href="mailto:'.$person_email_address.'">'.$person_email_address.'</a></li>', 'churchthemes'));
+					printf(__('<li><span>'.$person_email_label.'</span><a href="mailto:'.$person_email_address.'">en cliquant ici</a></li>', 'churchthemes'));
 				endif;
 				if($person_phone_label_1 && $person_phone_num_1):
 					printf(__('<li><span>'.$person_phone_label_1.'</span>'.$person_phone_num_1.'</li>', 'churchthemes'));
