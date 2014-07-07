@@ -73,5 +73,22 @@ $vimeo = $social_footer_settings['vimeo'];
 
 	wp_footer();
 ?>
+	<div id="aboutFooter">
+    		<div id="aboutFooter">
+    <style scoped>
+
+        #aboutFooter {
+            text-align:center;
+        }
+    </style>
+	<p>
+		<a href="mailto:hamady@appostrophe.ca?subject=Eglise Adventiste Bethesda">Vous avez une suggestion? Contactez nous!</a>
+	</p>
+	<p>
+		<span style="text-align:left;">
+			Conçu et réalisé par <a href="http://www.appostrophe.net" target="_blank"><span style="font-weight:bold;">App</span>ostrophe</a>
+		</span>
+	</p>
+</div>
 </body>
 </html>

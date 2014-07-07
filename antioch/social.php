@@ -36,7 +36,9 @@ $vimeo = $settings['vimeo'];
 						<?php if($youtube): ?><li><a href="<?php echo esc_url( $youtube ); ?>" class="youtube"><?php _e( 'YouTube', 'churchthemes' ); ?></a></li><?php endif; ?>
 						<?php if($flickr): ?><li><a href="<?php echo esc_url( $flickr ); ?>" class="flickr"><?php _e( 'Flickr', 'churchthemes' ); ?></a></li><?php endif; ?>
 						<?php if($twitter): ?><li><a href="<?php echo esc_url( $twitter ); ?>" class="twitter"><?php _e( 'Twitter', 'churchthemes' ); ?></a></li><?php endif; ?>
+                                                <?php if($facebook): ?><li><a href="https://www.facebook.com/JAdventBethesda" class="facebook-jeunesse">Facebook jeunesse></a></li><?php endif; ?>
 						<?php if($facebook): ?><li><a href="<?php echo esc_url( $facebook ); ?>" class="facebook"><?php _e( 'Facebook', 'churchthemes' ); ?></a></li><?php endif; ?>
+ 						<li><a href="https://plus.google.com/117913832381220420264" class="googleplus" rel="publisher">Google+</a></li>
 					</ul>
 				</div>
 			</div>

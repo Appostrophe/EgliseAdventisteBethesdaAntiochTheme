@@ -131,7 +131,7 @@ if(empty($podcast_subscribe_button_text)) $podcast_subscribe_button_text = 'Subs
 				<div class="social">
 					<ul>
 <?php if((empty($facebook_likes) || $facebook_likes == 'on')): ?>
-						<li><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" layout="button_count" show_faces="false" font="lucida grande"></fb:like></li>
+						<li><script src="http://connect.facebook.net/fr_CA/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" layout="standard" show_faces="true" action="like" share="true" font="lucida grande"></fb:like></li>
 <?php endif; ?>
 <?php if((empty($tweet_this) || $tweet_this == 'on')): ?>
 						<li><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"><?php _e('Tweet', 'churchthemes'); ?></a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
@@ -140,12 +140,12 @@ if(empty($podcast_subscribe_button_text)) $podcast_subscribe_button_text = 'Subs
 				</div>
 <?php endif; ?>
 <?php $the_content = get_the_content(); if($the_content): ?>
-				<h3><?php _e('Summary', 'churchthemes'); ?></h3>
+				<h3><?php _e('Sommaire', 'churchthemes'); ?></h3>
 				<?php the_content(); ?>
 <?php endif; ?>
 <?php if($sm_bible01_book||$sm_bible02_book||$sm_bible03_book||$sm_bible04_book||$sm_bible05_book): ?>
 				<div class="bible_refs">
-					<h3><?php _e('Bible References', 'churchthemes'); ?></h3>
+					<h3><?php _e('Références bibliques', 'churchthemes'); ?></h3>
 					<ul>
 						<?php
 							$book = $sm_bible01_book;

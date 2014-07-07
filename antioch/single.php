@@ -48,7 +48,7 @@ get_header(); ?>
 				<div class="social">
 					<ul>
 <?php if((empty($facebook_likes) || $facebook_likes == 'on')): ?>
-						<li><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" layout="button_count" show_faces="false" font="lucida grande"></fb:like></li>
+						<li><script src="http://connect.facebook.net/fr_CA/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" layout="standard" show_faces="true" action="like" share="true" font="lucida grande"></fb:like></li>
 <?php endif; ?>
 <?php if((empty($tweet_this) || $tweet_this == 'on')): ?>
 						<li><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"><?php _e('Tweet', 'churchthemes'); ?></a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
