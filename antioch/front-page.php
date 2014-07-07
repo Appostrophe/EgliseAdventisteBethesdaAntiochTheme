@@ -20,6 +20,20 @@
 get_header() ?>
 		<div id="wrapper3" class="container_12 grid-container">
 			<div class="grid_4 grid-33 alpha">
+			    <!-- Custom widget made to show only the announcements -->
+				<div class="home_widget">		
+					<h3>Derni&eacute;res annonces</h3>
+					<ul>
+						<?php
+						$args = array( 'posts_per_page' => 5, 'orderby' => 'rand', 'category' => 11 );
+						$rand_posts = get_posts( $args );
+						foreach ( $rand_posts as $post ) : 
+						  setup_postdata( $post ); ?>
+							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						<?php endforeach; 
+						wp_reset_postdata(); ?>
+					</ul>
+				</div>
 				<?php dynamic_sidebar('Homepage Left') ?>
 			</div>
 			<div class="grid_4 grid-33">
