@@ -25,11 +25,11 @@ get_header() ?>
 					<h3>Derni&eacute;res annonces</h3>
 					<ul>
 						<?php
-						$args = array( 'posts_per_page' => 5, 'orderby' => 'rand', 'category' => 11 );
+						$args = array( 'posts_per_page' => 5, 'orderby' => 'post_date', 'category' => 11 );
 						$rand_posts = get_posts( $args );
 						foreach ( $rand_posts as $post ) : 
 						  setup_postdata( $post ); ?>
-							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> - <span class="post_date"><?php the_date() ?></span></li>
 						<?php endforeach; 
 						wp_reset_postdata(); ?>
 					</ul>

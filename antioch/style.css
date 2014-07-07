@@ -814,6 +814,9 @@ html[xmlns] .mask ul {
 	-moz-box-shadow:1px 1px 2px #787871;
 	float:left;
 }
+list_widget li img.post-img {
+        margin-right: 5px;
+}
 .widget .list_widget li img {
 
 }
@@ -826,13 +829,19 @@ html[xmlns] .mask ul {
 .widget .list_widget li p {
 	width:169px;
 }
+.home_widget li span,
 .list_widget li p {
 	color:#8b8b86;
 	font-size:14px;
 }
+.home_widget li a,
 .list_widget li a {
 	color:#2e2e2b;
 }
+.list_widget li a.email {
+	color:#629fa6;
+}
+.home_widget li a:hover,
 .list_widget li a:hover {
 	color:#629fa6;
 	text-decoration:none;
