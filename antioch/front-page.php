@@ -23,7 +23,7 @@ get_header() ?>
 			    <!-- Custom widget made to show only the announcements -->
 				<div class="home_widget">		
 					<h3>Derni&eacute;res annonces</h3>
-					<ul>
+					<ul class="announcements-list">
 						<?php
 						$args = array( 'posts_per_page' => 5, 'orderby' => 'post_date', 'category' => 11 );
 						$rand_posts = get_posts( $args );

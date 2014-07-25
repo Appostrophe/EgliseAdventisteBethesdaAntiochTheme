@@ -598,6 +598,9 @@ html[xmlns] .mask ul {
 	list-style:none;
 	margin-left:0;
 }
+ul.announcements-list li::before {
+	content: "\2192 ";
+}
 .widget ul li li,
 .home_widget ul li li {
 	margin-left:20px;
